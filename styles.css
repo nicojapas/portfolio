@@ -50,10 +50,20 @@ p {
     color: var(--muted);
 }
 
+ul {
+    padding-left: 1.25rem;
+    color: var(--muted);
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
 a {
     color: var(--accent);
     text-decoration: none;
     border-bottom: 1px solid var(--border);
+    transition: border-color 0.2s ease;
 }
 
 a:hover {
@@ -65,9 +75,27 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+}
+
 .links a {
-    margin-right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
     font-weight: 500;
+    padding: 0.4rem 0;
+    transition: opacity 0.2s ease;
+}
+
+.links a:hover {
+    opacity: 0.7;
+}
+
+.links svg {
+    flex-shrink: 0;
 }
 
 .project {
@@ -76,17 +104,31 @@ a:hover {
     margin-bottom: 2rem;
     min-height: 160px;
     margin-top: 20px;
+    padding: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.project:hover {
+    background-color: rgba(255, 255, 255, 0.03);
 }
 
 .project-img {
     flex-shrink: 0;
     overflow: hidden;
     object-fit: cover;
-    border: 2px #c9c9c9 solid;
-    border-radius: 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
     width: 100px;
     height: 100px;
     margin-top: 5px;
+    transition: border-color 0.2s ease;
+}
+
+.project:hover .project-img {
+    border-color: var(--muted);
 }
 
 .project-content {
@@ -98,8 +140,32 @@ a:hover {
 }
 
 .tech {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--muted);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    letter-spacing: -0.01em;
+}
+
+.project-links {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.project-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.project-links a:hover {
+    border-color: var(--muted);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 footer {
@@ -108,4 +174,25 @@ footer {
     border-top: 1px solid var(--border);
     color: var(--muted);
     font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .project {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .project-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
 }
