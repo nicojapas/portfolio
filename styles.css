@@ -59,6 +59,19 @@ li {
     margin-bottom: 0.5rem;
 }
 
+.experience-entry {
+    margin-bottom: 1.5rem;
+}
+
+.experience-entry ul {
+    margin-top: 0.5rem;
+}
+
+.exp-meta {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
 a {
     color: var(--accent);
     text-decoration: none;
