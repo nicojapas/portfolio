@@ -108,7 +108,7 @@
     </header>
 
     <!-- WHAT I DO -->
-    <section>
+    <section id="about">
       <h2>What I do</h2>
       <ul>
         <li>Design and build production backend systems using Python, AWS (serverless, AWS Lambda, API Gateway,
@@ -120,34 +120,62 @@
     </section>
 
     <!-- PROJECTS -->
-    <section>
+    <section id="projects">
       <h2>Selected projects</h2>
       <p>A selection of projects that reflect my focus on cloud-native systems, data-driven software, and
         production-grade engineering.</p>
+
       <div class="project">
         <img
           class="project-img"
-          src="assets/trading.png"
-          alt="Plot of the Bitcoin-USD chart."
+          src="assets/japas-audio.png"
+          alt="Logo of the Japas Audio website."
           loading="lazy"
         />
         <div class="project-content">
-          <h3>Algorithmic Trading System</h3>
+          <h3>Audio VST Plugins (Japas Audio)</h3>
           <p>
-            End-to-end research and execution pipeline for systematic trading
-            strategies.
+            Commercial-grade audio plugins focused on DSP quality and performance.
           </p>
           <p>
-            <strong>Problem:</strong> Strategy evaluation was manual and hard to
-            generalize.<br />
-            <strong>Solution:</strong> Built a reusable backtesting and analysis
-            framework in Python.
+            <strong>Relevance:</strong> Demonstrates low-level performance optimization and systems thinking.<br />
+            <strong>Solution:</strong> Designed and implemented plugins in modern C++ using JUCE.
           </p>
           <p class="tech">
-            Python · Pandas · NumPy · AWS
+            C++ · JUCE · DSP
           </p>
           <div class="project-links">
-            <a href="https://github.com/nicojapas/algorithmic_trading" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
+            <a href="https://japasaudio.com/" target="_blank" rel="noopener noreferrer" aria-label="Project site">
+              <svg width="18" height="18"><use href="#icon-external"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <img
+          class="project-img"
+          src="assets/menger-world.png"
+          alt="Menger World fractal visualization."
+          loading="lazy"
+        />
+        <div class="project-content">
+          <h3>Menger World</h3>
+          <p>
+            Browser-based fractal experience where a voice-driven AI agent reshapes a real-time 3D scene as you talk to it.
+          </p>
+          <p>
+            <strong>Problem:</strong> Generative visuals are typically static or manually controlled.<br />
+            <strong>Solution:</strong> Built an infinite Menger sponge corridor rendered with WebGL and GLSL raymarching, wired to a conversational AI agent that adjusts shader parameters live based on conversation mood.
+          </p>
+          <p>
+            <strong>Focus:</strong> Two interchangeable agent backends (ElevenLabs Conversational AI and LangGraph with Groq-hosted Llama 3), structured Pydantic outputs, and procedural ambient audio synchronized to camera depth.
+          </p>
+          <p class="tech">
+            WebGL · GLSL · Python · FastAPI · WebSockets · LangGraph · ElevenLabs · Groq · Pydantic · Docker
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/nicojapas/menger-world" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
               <svg width="18" height="18"><use href="#icon-github"/></svg>
             </a>
           </div>
@@ -169,14 +197,13 @@
           <p>
             <strong>Problem:</strong> Extracting reliable answers from large, unstructured document collections required
             more than keyword search.<br />
-            <strong>Solution:</strong> Built an API-first system combining document processing, vector embeddings, and
-            LLM-based reasoning to enable semantic search and question answering.
+            <strong>Solution:</strong> RAG API with multi-provider LLMs (Gemini, DeepSeek, self-hosted Qwen 3 via Modal), JWT auth with per-user document isolation, and runtime model switching.
           </p>
           <p>
             <strong>Focus:</strong> AI integration, data pipelines, API design, and system reliability.
           </p>
           <p class="tech">
-            Python · FastAPI · OpenAPI · LLMs · Vector search · Embeddings · Gemini · DynamoDB
+            Python · FastAPI · LLMs · Vector search · Embeddings · FAISS · MongoDB Atlas · RAG
           </p>
           <div class="project-links">
             <a href="https://github.com/nicojapas/document-qa-api" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
@@ -202,10 +229,9 @@
             Data-driven Web3 platform for blockchain analysis and wallet interaction.
           </p>
           <p>
-            <strong>Problem: </strong>On-chain data inspection required multiple fragmented tools.<br />
-            <strong>Solution: </strong> Built a unified backend-driven system with real-time insights and a modern
-            UI.<br />
-            <strong>Focus: </strong>API design, data aggregation, and system reliability.
+            <strong>Problem:</strong> On-chain data inspection required multiple fragmented tools.<br />
+            <strong>Solution:</strong> Built a unified backend-driven system with real-time insights and a modern UI.<br />
+            <strong>Focus:</strong> API design, data aggregation, and system reliability.
           </p>
           <p class="tech">
             Python · TypeScript · Web3 · React · AWS
@@ -224,24 +250,54 @@
       <div class="project">
         <img
           class="project-img"
-          src="assets/japas-audio.png"
-          alt="Logo of the Japas Audio website."
+          src="assets/trading.png"
+          alt="Plot of the Bitcoin-USD chart."
           loading="lazy"
         />
         <div class="project-content">
-          <h3>Audio VST Plugins (Japas Audio)</h3>
+          <h3>Algorithmic Trading System</h3>
           <p>
-            Commercial-grade audio plugins focused on DSP quality and performance.
+            End-to-end research and execution pipeline for systematic trading strategies.
           </p>
           <p>
-            <strong>Relevance: </strong>Demonstrates low-level performance optimization and systems thinking.<br />
-            <strong>Solution: </strong>Designed and implemented plugins in modern C++ using JUCE.
+            <strong>Problem:</strong> Strategy evaluation was manual and hard to generalize.<br />
+            <strong>Solution:</strong> Built a reusable backtesting and analysis framework in Python using SARIMAX modeling on real-time cryptocurrency data.
           </p>
           <p class="tech">
-            C++ · JUCE · DSP
+            Python · Pandas · NumPy · AWS · Time Series Forecasting
           </p>
           <div class="project-links">
-            <a href="https://japasaudio.com/" target="_blank" rel="noopener noreferrer" aria-label="Project site">
+            <a href="https://github.com/nicojapas/algorithmic_trading" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
+              <svg width="18" height="18"><use href="#icon-github"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <img
+          class="project-img"
+          src="assets/lti-tool.png"
+          alt="EduBridge LTI."
+          loading="lazy"
+        />
+        <div class="project-content">
+          <h3>EduBridge LTI</h3>
+          <p>
+            LTI 1.3 Tool Provider with Auto-Grading.
+          </p>
+          <p>
+            <strong>Problem:</strong> LMS platforms like Moodle support external tools, but integrating securely with LTI 1.3 and synchronizing grades via AGS is complex and poorly documented.<br />
+            <strong>Solution:</strong> Built a FastAPI-based LTI 1.3 Tool Provider implementing OIDC login, JWT validation, launch claim persistence, OAuth 2.0 (private_key_jwt), and Assignment & Grade Services (AGS) to auto-grade essay submissions and sync scores directly to the Moodle gradebook.
+          </p>
+          <p class="tech">
+            Python · FastAPI · LTI 1.3 · OAuth 2.0 · JWT · Moodle · PostgreSQL
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/nicojapas/edu-bridge" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
+              <svg width="18" height="18"><use href="#icon-github"/></svg>
+            </a>
+            <a href="https://edubridge.moodlecloud.com/" target="_blank" rel="noopener noreferrer" aria-label="Moodle Integration">
               <svg width="18" height="18"><use href="#icon-external"/></svg>
             </a>
           </div>
@@ -278,40 +334,10 @@
         </div>
       </div>
 
-      <div class="project">
-        <img
-          class="project-img"
-          src="assets/lti-tool.png"
-          alt="EduBridge LTI."
-          loading="lazy"
-        />
-        <div class="project-content">
-          <h3>EduBridge LTI</h3>
-          <p>
-            LTI 1.3 Tool Provider with Auto-Grading.
-          </p>
-          <p>
-            <strong>Problem:</strong> LMS platforms like Moodle support external tools, but integrating securely with LTI 1.3 and synchronizing grades via AGS is complex and poorly documented.<br />
-            <strong>Solution:</strong> Built a FastAPI-based LTI 1.3 Tool Provider implementing OIDC login, JWT validation, launch claim persistence, OAuth 2.0 (private_key_jwt), and Assignment & Grade Services (AGS) to auto-grade essay submissions and sync scores directly to the Moodle gradebook.
-          </p>
-          <p class="tech">
-            Python · FastAPI · LTI 1.3 · OAuth 2.0 · JWT · Moodle · PostgreSQL
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/nicojapas/edu-bridge" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
-              <svg width="18" height="18"><use href="#icon-github"/></svg>
-            </a>
-            <a href="https://edubridge.moodlecloud.com/" target="_blank" rel="noopener noreferrer" aria-label="Moodle Integration">
-              <svg width="18" height="18"><use href="#icon-external"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
     </section>
 
     <!-- CERTIFICATIONS -->
-    <section>
+    <section id="certifications">
       <h2>Certifications</h2>
       <p>
         <strong>AWS Solutions Architect Associate (SAA-C03)</strong>, 2026<br />
@@ -320,7 +346,7 @@
     </section>
 
     <!-- EXPERIENCE -->
-    <section>
+    <section id="experience">
       <h2>Experience</h2>
       <div class="experience-entry">
         <p>
@@ -329,6 +355,8 @@
         </p>
         <ul>
           <li>Building production-grade backend APIs and serverless services in Python and AWS.</li>
+          <li>Built a self-hosted LLM inference stack on serverless GPU infrastructure (Modal, vLLM, Qwen3) with an OpenAI-compatible API endpoint for privacy-sensitive workloads.</li>
+          <li>Building RAG pipelines, multi-provider LLM routing, and AI-powered tools using FastAPI, LangChain, and Pydantic.</li>
           <li>Developing Japas Audio, a commercial audio plugin business (C++, JUCE).</li>
           <li>Obtained AWS Certified Solutions Architect Associate (Apr 2026).</li>
         </ul>
@@ -360,7 +388,7 @@
     </section>
 
     <!-- EDGE -->
-    <section>
+    <section id="edge">
       <h2>My edge</h2>
       <p>
         My path to software engineering wasn't typical. I spent a decade as a mechanical engineer designing automated
@@ -373,7 +401,7 @@
     </section>
 
     <!-- EDUCATION -->
-    <section>
+    <section id="education">
       <h2>Education</h2>
       <p>
         <strong>Data Analytics</strong> — Ironhack<br />
@@ -384,7 +412,7 @@
     </section>
 
     <!-- AWARDS -->
-    <section>
+    <section id="awards">
       <h2>Honors & Awards</h2>
       <ul>
         <li><strong>National Finalist — Argentine Mathematical Olympiad (OMA)</strong><br />
@@ -400,7 +428,7 @@
     </section>
 
     <!-- LANGUAGES -->
-    <section>
+    <section id="languages">
       <h2>Languages</h2>
       <p>
         <strong>Spanish:</strong> Native ·
@@ -411,7 +439,7 @@
     </section>
 
     <!-- STACK -->
-    <section>
+    <section id="stack">
       <h2>Tech stack</h2>
       <p>
         <strong>Backend: </strong>Python, OpenAPI, FastAPI, Node.js<br />
