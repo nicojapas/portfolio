@@ -192,15 +192,14 @@
             it.
           </p>
           <p>
-            <strong>Problem:</strong> Generative visuals are typically static or manually controlled.<br />
-            <strong>Solution:</strong> Built an infinite Menger sponge corridor rendered with WebGL and GLSL
-            raymarching, wired to a conversational AI agent that adjusts shader parameters live based on conversation
-            mood.
+            An infinite Menger sponge corridor rendered entirely in the browser with WebGL and GLSL raymarching. A
+            conversational AI agent listens and reshapes the scene in real time—adjusting edge rounding, domain warp,
+            breathing speed, and color based on the mood of the conversation.
           </p>
           <p>
-            <strong>Focus:</strong> Two interchangeable agent backends (ElevenLabs Conversational AI and LangGraph with
-            Groq-hosted Llama 3), structured Pydantic outputs, and procedural ambient audio synchronized to camera
-            depth.
+            Two interchangeable agent backends: ElevenLabs Conversational AI for ultra-low latency voice-to-voice, and a
+            LangGraph path with Groq-hosted Llama 3 and local Piper TTS. Procedural ambient audio synchronized to camera
+            depth and shader animation.
           </p>
           <p class="tech">
             WebGL · GLSL · Python · FastAPI · WebSockets · LangGraph · ElevenLabs · Groq · Pydantic · Docker
@@ -210,6 +209,12 @@
               aria-label="View source on GitHub">
               <svg width="18" height="18">
                 <use href="#icon-github" />
+              </svg>
+            </a>
+            <a href="https://nicojapas.github.io/menger-world/" target="_blank" rel="noopener noreferrer"
+              aria-label="Project site">
+              <svg width="18" height="18">
+                <use href="#icon-external" />
               </svg>
             </a>
           </div>
