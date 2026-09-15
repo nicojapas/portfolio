@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nicolás Japas – Senior Software Engineer</title>
+  <title>Nicolás Japas – Senior AI Engineer</title>
   <meta name="description"
-    content="Senior Software Engineer specializing in Python, AWS serverless architectures, and cloud-native backend systems. Based in Berlin, available for remote work across Europe." />
+    content="Senior AI Engineer building production GenAI systems on AWS: retrieval (RAG, hybrid search), LangGraph agents, and LLM-integrated backends. Based in Lisbon, available for remote work across Europe." />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Nicolás Japas – Senior Software Engineer" />
+  <meta property="og:title" content="Nicolás Japas – Senior AI Engineer" />
   <meta property="og:description"
-    content="Senior Software Engineer specializing in Python, AWS serverless architectures, and cloud-native backend systems." />
+    content="Senior AI Engineer building production GenAI systems on AWS: retrieval (RAG, hybrid search), LangGraph agents, and LLM-integrated backends." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nicojapas.github.io/portfolio/" />
   <meta property="og:image" content="https://nicojapas.github.io/portfolio/assets/banner.jpg" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Nicolás Japas – Senior Software Engineer" />
+  <meta name="twitter:title" content="Nicolás Japas – Senior AI Engineer" />
   <meta name="twitter:description"
-    content="Senior Software Engineer specializing in Python, AWS serverless architectures, and cloud-native backend systems." />
+    content="Senior AI Engineer building production GenAI systems on AWS: retrieval (RAG, hybrid search), LangGraph agents, and LLM-integrated backends." />
   <meta name="twitter:image" content="https://nicojapas.github.io/portfolio/assets/banner.jpg" />
 
   <!-- Additional Meta -->
@@ -37,19 +37,19 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Nicolás Japas",
-    "jobTitle": "Senior Software Engineer",
+    "jobTitle": "Senior AI Engineer",
     "url": "https://nicojapas.github.io/portfolio/",
     "sameAs": [
       "https://github.com/nicojapas",
       "https://www.linkedin.com/in/nicolas-japas"
     ],
-    "knowsAbout": ["Python", "AWS", "Serverless", "Backend Development", "Cloud Architecture"],
+    "knowsAbout": ["Python", "AWS", "RAG", "LangGraph", "LLM", "Serverless", "Backend Development", "Cloud Architecture"],
     "workLocation": {
       "@type": "Place",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Berlin",
-        "addressCountry": "DE"
+        "addressLocality": "Lisbon",
+        "addressCountry": "PT"
       }
     }
   }
@@ -94,16 +94,17 @@
       <img src="assets/profile.jpg" alt="Nicolás Japas" class="profile-img" width="120" height="120" />
       <h1>Nicolás Japas</h1>
       <div class="meta">
-        Senior Software Engineer (Python · AWS · Distributed Systems) · Berlin / Remote · EU Citizen
+        Senior AI Engineer (GenAI · RAG · AWS · Python) · Lisbon / Remote · EU Citizen
       </div>
       <p>
-      <p>Senior Software Engineer specializing in backend systems and cloud infrastructure. I build the things that have
-        to work: API-driven services, serverless architectures, and data pipelines on AWS that are reliable, observable,
-        and maintainable at scale.</p>
-      <p>Beyond cloud infrastructure, I build LLM-integrated backend systems: RAG pipelines, multi-provider inference
-        routing, and privacy-preserving self-hosted models on serverless GPU infrastructure via Modal and vLLM. I work
-        AI-native: Claude Code, DeepSeek, and Gemini are part of my daily workflow.
-      </p>
+      <p>Senior AI Engineer building production GenAI systems end-to-end: the retrieval layer (hybrid search, chunking,
+        re-ranking, metadata filtering), agent orchestration with LangGraph, and the APIs and interfaces that expose
+        them to real users. Currently delivering the retrieval, ingestion, agent, and application layers of a live
+        conversational AI product for an enterprise client via PwC AppDev.</p>
+      <p>My foundation is backend and cloud: Python and FastAPI services, event-driven serverless architectures, and
+        data pipelines on AWS that are reliable, observable, and maintainable at scale. Independently, I build
+        multi-provider inference routing and privacy-preserving self-hosted models on serverless GPU infrastructure
+        via Modal and vLLM. I work AI-native: Claude Code, DeepSeek, and Gemini are part of my daily workflow.</p>
       <p>When I work on audio technology, I bring domain fluency that most backend engineers don't have. I'm a trained
         musician, academic composer, and VST plugin developer. I build and sell commercial audio plugins under my own
         label, Japas Audio, written in C++ and JUCE. I understand audio products because I use them myself.</p>
@@ -144,6 +145,8 @@
     <section id="about">
       <h2>What I do</h2>
       <ul>
+        <li>Build production GenAI systems: retrieval pipelines (hybrid search, chunking, re-ranking), LangGraph agent
+          orchestration, and Bedrock/OpenSearch-based infrastructure on AWS</li>
         <li>Design and build production backend systems using Python, AWS (serverless, AWS Lambda, API Gateway,
           DynamoDB, and IaC)</li>
         <li>Develop backend-heavy full-stack applications with TypeScript and React when required</li>
@@ -166,8 +169,11 @@
             Commercial-grade audio plugins focused on DSP quality and performance.
           </p>
           <p>
-            <strong>Relevance:</strong> Demonstrates low-level performance optimization and systems thinking.<br />
-            <strong>Solution:</strong> Designed and implemented plugins in modern C++ using JUCE.
+            <strong>Relevance:</strong> Demonstrates low-level performance optimization and systems thinking in a
+            domain where correctness is perceptual.<br />
+            <strong>Solution:</strong> Digital Decay, a destructive delay plugin combining wave-shaping and
+            distortion, released as our first product. Designed and implemented in modern C++ using JUCE, owning the
+            full signal chain from DSP design through 3D UI and commercial delivery.
           </p>
           <p class="tech">
             C++ · JUCE · DSP
@@ -231,14 +237,17 @@
           <p>
             <strong>Problem:</strong> Extracting reliable answers from large, unstructured document collections required
             more than keyword search.<br />
-            <strong>Solution:</strong> RAG API with multi-provider LLMs (Gemini, DeepSeek, self-hosted Qwen 3 via
+            <strong>Solution:</strong> Hybrid BM25 + vector RAG with RRF fusion and Voyage rerank-2.5, a Ragas
+            evaluation harness and Prometheus metrics. Multi-provider LLMs (Gemini, DeepSeek, self-hosted Qwen 3 via
             Modal), JWT auth with per-user document isolation, and runtime model switching.
           </p>
           <p>
-            <strong>Focus:</strong> AI integration, data pipelines, API design, and system reliability.
+            <strong>Focus:</strong> AI integration, retrieval quality, data pipelines, API design, and system
+            reliability.
           </p>
           <p class="tech">
-            Python · FastAPI · LLMs · Vector search · Embeddings · FAISS · MongoDB Atlas · RAG
+            Python · FastAPI · LLMs · Hybrid Search (BM25 + Vector) · RRF · Voyage Rerank · Ragas · Prometheus ·
+            Embeddings · FAISS · RAG
           </p>
           <div class="project-links">
             <a href="https://github.com/nicojapas/document-qa-api" target="_blank" rel="noopener noreferrer"
@@ -390,8 +399,11 @@
     <section id="certifications">
       <h2>Certifications</h2>
       <p>
+        <strong>Claude Certified Architect – Professional</strong>, 2026<br />
+        <strong>Neo4j Certified Professional</strong>, 2026<br />
         <strong>AWS Solutions Architect Associate (SAA-C03)</strong>, 2026<br />
         <strong>HashiCorp Terraform Associate 004</strong>, 2026<br />
+        <strong>AWS Generative AI Developer – Professional (AIP-C01)</strong>, in progress<br />
       </p>
     </section>
 
@@ -400,16 +412,34 @@
       <h2>Experience</h2>
       <div class="experience-entry">
         <p>
-          <strong>Freelance</strong> — Software Engineer<br />
-          <span class="exp-meta">Remote · Jan 2026 – Present</span>
+          <strong>PwC AppDev</strong> — Senior AI Engineer (B2B Contract)<br />
+          <span class="exp-meta">Remote · Jul 2026 – Present</span>
         </p>
         <ul>
-          <li>Building production-grade backend APIs and serverless services in Python and AWS.</li>
-          <li>Built a self-hosted LLM inference stack on serverless GPU infrastructure (Modal, vLLM, Qwen3) with an
-            OpenAI-compatible API endpoint for privacy-sensitive workloads.</li>
-          <li>Building RAG pipelines, multi-provider LLM routing, and AI-powered tools using FastAPI, LangChain, and
-            Pydantic.</li>
-          <li>Developing Japas Audio, a commercial audio plugin business (C++, JUCE).</li>
+          <li>Build and tune the retrieval layer of a production conversational AI assistant: hybrid search over
+            Amazon OpenSearch Serverless (vector kNN with metadata filtering, SigV4 auth), Bedrock Titan v2
+            embeddings, and chunk re-ranking to control answer precision.</li>
+          <li>Fixed the crawler that diffs source-of-truth data into the knowledge base, keeping retrieval current.</li>
+          <li>Deliver across the full service boundary: React 18 SPA, FastAPI/Pydantic API on AWS Lambda, and a
+            LangGraph agent using function calling with structured response types (text, action buttons, data cards).</li>
+          <li>Test-driven delivery; structured logging and monitoring for service behaviour, I/O, and performance;
+            ship through QA, security review, and deployment alongside data scientists and DevOps.</li>
+        </ul>
+      </div>
+      <div class="experience-entry">
+        <p>
+          <strong>Japas Audio</strong> — Independent Senior Software Engineer / Founder<br />
+          <span class="exp-meta">Remote · Nov 2025 – Present</span>
+        </p>
+        <ul>
+          <li>Founder of Japas Audio; built and released Digital Decay, a VST plugin (C++, JUCE, DSP), available at
+            japasaudio.com. Owned the full signal chain from DSP design through 3D UI and commercial delivery.</li>
+          <li>Built and deployed a self-hosted LLM inference stack (Modal, vLLM, Qwen3) with an OpenAI-compatible API
+            endpoint, enabling provider-agnostic LLM integration and zero data egress for privacy-sensitive
+            workloads.</li>
+          <li>Built a RAG service with hybrid BM25 and vector retrieval, RRF fusion, Voyage rerank-2.5, a Ragas
+            evaluation harness, and Prometheus metrics; multi-provider LLM routing, JWT auth with per-user document
+            isolation, and runtime model switching.</li>
         </ul>
       </div>
       <div class="experience-entry">
@@ -502,18 +532,24 @@
     <section id="stack">
       <h2>Tech stack</h2>
       <p>
-        <strong>Backend: </strong>Python, OpenAPI, FastAPI, Node.js<br />
-        <strong>Cloud: </strong>AWS (Lambda, API Gateway, DynamoDB, S3, CloudWatch, CDK, IaC)<br />
-        <strong>Data: </strong>PostgreSQL, MySQL, DynamoDB, MongoDB, Pandas, NumPy, DuckDB<br />
-        <strong>Frontend: </strong>TypeScript, React, Vite, MUI<br />
+        <strong>AI / LLM: </strong>RAG (hybrid search, chunking, re-ranking, metadata filtering), LangGraph,
+        LangChain, Tool Calling, Amazon Bedrock, OpenSearch Serverless, FAISS, Embeddings (Titan v2), Neo4j,
+        Guardrails, vLLM, Voice Agents<br />
+        <strong>Backend: </strong>Python, OpenAPI, FastAPI, Node.js, Pydantic, asyncio<br />
+        <strong>Cloud: </strong>AWS (Lambda, Bedrock, OpenSearch, EventBridge, API Gateway, DynamoDB, S3, Glue,
+        CloudWatch, Cognito, IAM, CDK); Cloudflare (Workers, Pages, D1)<br />
+        <strong>Infrastructure: </strong>Terraform, CloudFormation, Docker, Kubernetes, Microservices, GitHub
+        Actions, CI/CD<br />
+        <strong>Data: </strong>PostgreSQL, MySQL, DynamoDB, MongoDB, Neo4j, SQLAlchemy, Pandas, NumPy, DuckDB<br />
+        <strong>Frontend: </strong>TypeScript, React, Next.js, Vite, MUI, Tailwind<br />
         <strong>Audio/DSP: </strong>C++, JUCE<br />
         <strong>Testing: </strong>Pytest, Playwright, Cypress, Jest<br />
-        <strong>Other: </strong>CI/CD, AppVeyor, Sentry<br />
+        <strong>Other: </strong>Sentry, Structured Logging & Monitoring<br />
       </p>
     </section>
 
     <footer>
-      Open to senior full-stack (backend focus), platform, or cloud engineering roles (Python / AWS) · Remote
+      Open to new B2B engagements in AI/GenAI engineering, backend, or cloud roles (Python / AWS) · Remote
     </footer>
   </main>
 </body>
