@@ -51,7 +51,6 @@
     "knowsAbout": ["Python", "AWS", "RAG", "GraphRAG", "LangGraph", "LLM", "Fine-tuning", "Serverless", "Backend Development", "Cloud Architecture", "Audio DSP"],
     "email": "mailto:nicolasjapas@gmail.com",
     "nationality": ["Germany", "Argentina"],
-    "worksFor": {"@type": "Organization", "name": "PwC AppDev"},
     "workLocation": {
       "@type": "Place",
       "address": {
@@ -99,8 +98,29 @@
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <main id="main-content" class="container">
     <header>
-      <img src="assets/banner.jpg" alt="" class="cover-banner" width="1395" height="348" />
-      <img src="assets/profile.jpg" alt="Nicolás Japas" class="profile-img" width="120" height="120" />
+      <div class="cover-banner" aria-hidden="true">
+        <svg class="cover-graph" viewBox="0 0 260 200" preserveAspectRatio="xMaxYMid meet">
+          <g class="graph-lines">
+            <path d="M20 40 L55 62 L150 100 L205 30 M150 100 L225 22 M150 100 L245 128 M150 100 L195 170" />
+          </g>
+          <g class="graph-nodes">
+            <circle cx="20" cy="40" r="3" />
+            <circle cx="55" cy="62" r="3.5" />
+            <circle cx="150" cy="100" r="7" />
+            <circle cx="205" cy="30" r="5" />
+            <circle cx="225" cy="22" r="4" />
+            <circle cx="245" cy="128" r="4" />
+            <circle cx="195" cy="170" r="5" />
+          </g>
+        </svg>
+        <div class="cover-text">
+          <span class="cover-rule"></span>
+          <span class="cover-title">Senior AI Engineer</span>
+          <span class="cover-sub">Production GenAI Systems on AWS</span>
+          <span class="cover-stack">Python · AWS · LangGraph · RAG · LLM</span>
+        </div>
+      </div>
+      <img src="assets/profile.webp" alt="Nicolás Japas" class="profile-img" width="120" height="120" fetchpriority="high" />
       <h1>Nicolás Japas</h1>
       <div class="meta">
         GenAI · RAG · AWS · Python · Lisbon / Remote · EU Citizen
@@ -115,7 +135,7 @@
           <svg width="16" height="16">
             <use href="#icon-email" />
           </svg>
-          Contact
+          nicolasjapas@gmail.com
         </a>
         <a href="assets/cv_njapas.pdf" download="cv-nicolas-japas.pdf">
           <svg width="16" height="16">
@@ -149,8 +169,8 @@
     <section id="projects">
       <h2>Selected projects</h2>
 
-      <div class="project featured">
-        <img class="project-img" src="assets/sequoia.png" alt="Sequoia plugin interface with a prompt field and a 16-step sequencer." loading="lazy" />
+      <article class="project featured">
+        <img class="project-img" src="assets/sequoia.webp" alt="Sequoia plugin interface with a prompt field and a 16-step sequencer." loading="lazy" />
         <div class="project-content">
           <h3>Sequoia: AI MIDI Sequencer<span class="badge">NEW</span></h3>
           <p>
@@ -191,9 +211,9 @@
             </a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project">
+      <article class="project">
         <img class="project-img" src="assets/ai-qa-api.webp" alt="AI-powered document Q&A API logo." loading="lazy" />
         <div class="project-content">
           <h3>AI Document Q&amp;A API</h3>
@@ -232,9 +252,9 @@
             </a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project">
+      <article class="project">
         <img class="project-img" src="assets/bender-ai.svg" alt="Bender AI architecture: OpenAI client, Modal proxy auth, vLLM on a GPU container." loading="lazy" />
         <div class="project-content">
           <h3>Bender AI: Serverless LLM Inference</h3>
@@ -263,9 +283,9 @@
             </a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project">
+      <article class="project">
         <img class="project-img" src="assets/digital-decay.webp" alt="Digital Decay plugin interface." loading="lazy" />
         <div class="project-content">
           <h3>Digital Decay (Japas Audio)</h3>
@@ -301,9 +321,9 @@
             </a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project">
+      <article class="project">
         <img class="project-img" src="assets/lti-tool.webp" alt="EduBridge LTI tool logo." loading="lazy" />
         <div class="project-content">
           <h3>EduBridge LTI</h3>
@@ -333,9 +353,9 @@
             </a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project">
+      <article class="project">
         <img class="project-img" src="assets/menger-world.webp" alt="Menger World fractal visualization." loading="lazy" />
         <div class="project-content">
           <h3>Menger World</h3>
@@ -376,7 +396,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </article>
     </section>
 
     <section id="experience">
@@ -474,14 +494,11 @@
           <li>RAG</li>
           <li>GraphRAG</li>
           <li>LangGraph</li>
-          <li>LangChain</li>
           <li>Tool Calling</li>
           <li>Bedrock</li>
           <li>OpenSearch Serverless</li>
           <li>FAISS</li>
-          <li>Embeddings</li>
           <li>Neo4j</li>
-          <li>Guardrails</li>
           <li>LoRA Fine-tuning</li>
           <li>llama.cpp</li>
           <li>vLLM</li>
@@ -494,7 +511,6 @@
         <ul class="tags">
           <li>Python</li>
           <li>TypeScript</li>
-          <li>JavaScript</li>
           <li>SQL</li>
           <li>C++</li>
         </ul>
@@ -503,11 +519,8 @@
         <h3>Backend</h3>
         <ul class="tags">
           <li>FastAPI</li>
-          <li>Node.js</li>
-          <li>asyncio</li>
           <li>REST / OpenAPI</li>
           <li>GraphQL</li>
-          <li>Event-Driven</li>
         </ul>
       </div>
       <div class="stack-row">
@@ -520,10 +533,7 @@
           <li>Cognito</li>
           <li>CDK</li>
           <li>Terraform</li>
-          <li>CloudFormation</li>
           <li>Docker</li>
-          <li>GitHub Actions</li>
-          <li>Cloudflare</li>
           <li>Modal</li>
         </ul>
       </div>
@@ -531,10 +541,6 @@
         <h3>Data</h3>
         <ul class="tags">
           <li>PostgreSQL</li>
-          <li>MongoDB</li>
-          <li>SQLAlchemy</li>
-          <li>Pandas</li>
-          <li>NumPy</li>
           <li>DuckDB</li>
         </ul>
       </div>
@@ -542,10 +548,8 @@
         <h3>Frontend &amp; Testing</h3>
         <ul class="tags">
           <li>React</li>
-          <li>Tailwind</li>
           <li>Pytest</li>
           <li>Playwright</li>
-          <li>Cypress</li>
         </ul>
       </div>
       <div class="stack-row">
