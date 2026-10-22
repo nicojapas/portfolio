@@ -452,6 +452,12 @@ a:hover {
     background: var(--accent);
 }
 
+.experience-entry h3 {
+    margin: 0;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
 .experience-entry ul {
     margin-top: 0.5rem;
 }
@@ -565,10 +571,15 @@ footer {
 }
 
 @media print {
+    .cover-banner,
     .nav,
     .links,
     .skip-link {
         display: none;
+    }
+
+    .profile-img {
+        margin-top: 0;
     }
 
     :root {
